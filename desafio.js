@@ -77,20 +77,19 @@ class ProductManager {
 );
 
   // Se llama a getProducts y se espera el producto recién agregado
-  console.log(productManager.getProducts());
-  
+    console.log(productManager.getProducts());
+
   // Se llama a getProductById con el id del producto recién agregado
-  console.log(productManager.getProductById(newProduct.id)); 
-  
+    console.log(productManager.getProductById(newProduct.id)); 
+
   // Se actualiza el producto recién agregado con updateProduct
-  productManager.updateProduct(newProduct.id, 'price', 250);
-  
+    productManager.updateProduct(newProduct.id, 'price', 250);
+
   // Se verifica que el producto se haya actualizado correctamente
-  console.log(productManager.getProducts()); 
-  
+    console.log(productManager.getProducts()); 
+
   // Se elimina el producto con deleteProduct
-  productManager.deleteProduct(newProduct.id);
-  
+    productManager.deleteProduct(newProduct.id);
+
   // Se verifica que el producto se haya eliminado correctamente
-  console.log(productManager.getProducts()); 
-  
+    console.log(productManager.getProducts()); 
